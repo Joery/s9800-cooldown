@@ -1,0 +1,28 @@
+Tiny mod that reduces the cooldown for company buyouts and mergers from 180 to 7 days.
+
+[h3]Customization[/h3]
+
+You can change the cooldown yourself if you want something different.
+
+Open [b]cooldown.meow[/b] with a text editor like Notepad++. The default location is:
+[code]C:\Program Files (x86)\Steam\SteamApps\Workshop\Content\1539140\3790505363\[/code]
+
+Find the following lines:
+
+[code]
+if global.daysfromuy > 7 {
+    global.daysfromuy = 7
+}
+[/code]
+
+Replace both occurrences of 7 with the number of days you want the cooldown to last. Don't make any other changes. Otherwise you'll get syntax errors.
+
+After you're done, save the file & restart the game for the changes to take effect.
+
+[b]Note:[/b] Mod updates will overwrite manual changes. You'll need to change the value again after an update.
+
+[h3]Compatibility[/h3]
+
+Tested with version 0.10.2.x. Works with both new & existing saves. Doesn't disable achievements. The mod can be safely removed without breaking saves. After the existing cooldown ends, it goes back to 180 days.
+
+Also check out my other mods [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3790506341]More Starting Money[/url] & [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3790507366]Real Company Names[/url].
