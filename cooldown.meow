@@ -1,0 +1,18 @@
+-- Licensed under GNU General Public License v3.0
+-- Source @ https://github.com/Joery/s9800-cooldown
+-- Steam Workshop @ https://steamcommunity.com/sharedfiles/filedetails/?id=3790505363
+
+mod = {
+    name: "Buyout & Merger Cooldown",
+    description: "Reduces the cooldown between company buyouts and mergers.",
+    author: "MrJoery",
+    version: "1.0.2",
+
+    step: fun () {
+        if global.daysfromuy > 7 {
+            global.daysfromuy = 7
+        }
+    }
+}
+
+return mod
